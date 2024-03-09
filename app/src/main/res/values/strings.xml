@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">ChallengeAndroidStudio</string>
+    <string name="app_name">Challenge2</string>
+    <string name="text_add_item">Tambah</string>
+    <string name="text_discount_40">Diskon 40% OFF</string>
+    <string name="text_discount_40_promo">Promo diskon hanya berlaku tanggal 10 - 24 April 2024</string>
+    <string name="text_user_name">Hai Raihan</string>
+    <string name="text_welcome_app">Selamat Datang di Food Star</string>
+    <string name="text_category_title">Kategori</string>
+    <string name="text_catalog_title">List Menu</string>
 </resources>
