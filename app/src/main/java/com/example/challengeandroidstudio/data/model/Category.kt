@@ -1,7 +1,8 @@
-package com.example.challengeandroidstudio.model
+package com.example.challengeandroidstudio.data.model
 
 import androidx.annotation.DrawableRes
 import java.util.UUID
+
 
 data class Category(
     var id: String = UUID.randomUUID().toString(),

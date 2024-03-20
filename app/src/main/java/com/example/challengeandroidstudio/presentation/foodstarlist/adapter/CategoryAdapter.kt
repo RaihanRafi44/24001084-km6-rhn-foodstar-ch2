@@ -1,10 +1,11 @@
-package com.example.challengeandroidstudio.adapter
+package com.example.challengeandroidstudio.presentation.foodstarlist.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.challengeandroidstudio.databinding.ItemCategoryBinding
-import com.example.challengeandroidstudio.model.Category
+import com.example.challengeandroidstudio.data.model.Category
+
 
 class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>(){
 
@@ -22,7 +23,6 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>
 
     }
 
-    //Counting the data size
     override fun getItemCount(): Int {
         return data.size
     }
