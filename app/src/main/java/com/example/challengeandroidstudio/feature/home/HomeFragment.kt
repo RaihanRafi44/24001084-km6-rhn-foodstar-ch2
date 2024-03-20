@@ -13,6 +13,7 @@ import com.example.challengeandroidstudio.data.datasource.FoodStarDataSource
 import com.example.challengeandroidstudio.data.model.Catalog
 import com.example.challengeandroidstudio.data.model.Category
 import com.example.challengeandroidstudio.databinding.FragmentHomeBinding
+import com.example.challengeandroidstudio.feature.detail.DetailActivity
 import com.example.challengeandroidstudio.presentation.foodstarlist.adapter.CatalogAdapter
 import com.example.challengeandroidstudio.presentation.foodstarlist.adapter.CategoryAdapter
 import com.example.challengeandroidstudio.presentation.foodstarlist.adapter.OnItemClickedListeners
@@ -76,7 +77,7 @@ class HomeFragment : Fragment() {
             listMode = listMode,
             listener = object : OnItemClickedListeners<Catalog> {
                 override fun onItemClicked(item: Catalog) {
-                    /*navigateToDetail(item)*/
+                    navigateToDetail(item)
                 }
             }
         )
@@ -87,9 +88,9 @@ class HomeFragment : Fragment() {
         adapter?.submitData(dataSourceCatalog.getCatalogMembers())
     }
 
-    /*private fun navigateToDetail(item: Catalog) {
+    private fun navigateToDetail(item: Catalog) {
         val intent = Intent(requireContext(), DetailActivity::class.java)
         intent.putExtra("catalog", item)
         startActivity(intent)
-    }*/
+    }
 }
